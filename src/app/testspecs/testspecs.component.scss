@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  height: 100vh;
+  .col-one{
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    border: 1px solid black;
+  }
+  .col-two{
+    width: 100%;
+    border: 1px solid black;
+  }
+  .col-tree{
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    border: 1px solid black;
+  }
+}
+@media (max-width: 600px) {
+  .col-two{
+    width: 600px;
+    max-width: 600px;
+    overflow: scroll;
+    background-color: red;
+  }
+}
+

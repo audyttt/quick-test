@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="col-one">
+    <form [formGroup]="form">
+      <input type="number" formControlName="numberInput">
+    </form>
+  </div>
+  <div class="col-two">
+    <form [formGroup]="form">
+      <mat-form-field appearance="outline">
+        <mat-select formControlName="calculateOption" >
+          <mat-option *ngFor="let item of cars" [value]="item.value">
+            {{item.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="col-tree">
+    {{result}}
+  </div>
+</div>
